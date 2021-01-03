@@ -56,7 +56,7 @@ jobs:
       with:
         app-name: ${{ env.NOME_WEBAPP }}
         #images: 'leohicksteingithubactions.azurecr.io/apidevweek:${{ github.run_number }}'
-        images: '${{ NOME_COMPLETO_IMAGEM }}:${{ github.run_number }}'
+        images: ${{ NOME_COMPLETO_IMAGEM }}':${{ github.run_number }}'
         
 #    - name: Build com utilitario dotnet
 #      run: dotnet build ${{ env.CAMINHO_PROJETO_WEBAPP }} --configuration Release
