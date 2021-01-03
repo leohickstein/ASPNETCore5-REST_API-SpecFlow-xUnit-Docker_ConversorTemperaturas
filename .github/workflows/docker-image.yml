@@ -10,7 +10,7 @@ jobs:
 
   build:
     env:
-      CAMINHO_PROJETO_TESTS: ./APITemperatura.Especificacoes/APITemperatura.Especificacoes
+      CAMINHO_PROJETO_TESTS: ./APITemperatura.Especificacoes
       CAMINHO_PROJETO_WEBAPP: ./APITemperatura
       NOME_IMAGEM: apidevweek
       NOME_COMPLETO_IMAGEM: ${{ secrets.CONTAINER_REGISTRY }}/$NOME_IMAGEM
