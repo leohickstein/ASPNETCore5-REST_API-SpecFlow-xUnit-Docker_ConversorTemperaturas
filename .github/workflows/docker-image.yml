@@ -14,7 +14,7 @@ jobs:
       CAMINHO_PROJETO_WEBAPP: ./APITemperatura
       NOME_IMAGEM: apidevweek
       NOME_COMPLETO_IMAGEM: ${{ secrets.CONTAINER_REGISTRY }}/$NOME_IMAGEM
-      NOME_WEBAPP: apidevweek
+      NOME_WEBAPP: leohicksteinApiTemperaturaDevWeek0
 
     runs-on: ubuntu-latest
 
