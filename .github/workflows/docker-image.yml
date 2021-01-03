@@ -10,7 +10,7 @@ jobs:
 
   build:
     env:
-      CAMINHO_PROJETO_TESTS: ./APITemperatura.Especificacoes
+      CAMINHO_PROJETO_TESTS: ./APITemperatura.Especificacoes/APITemperatura.Especificacoes.csproj
       CAMINHO_PROJETO_WEBAPP: ./APITemperatura
       NOME_IMAGEM: apidevweek
       NOME_COMPLETO_IMAGEM: ${{ secrets.CONTAINER_REGISTRY }}/$NOME_IMAGEM
@@ -30,7 +30,7 @@ jobs:
       run:  dotnet --list-sdks
         
     - name: Executar testes automatizados
-      run: dotnet test ${{ env.CAMINHO_PROJETO_TESTES }} --verbosity minimal
+      run: dotnet test ${{ env.CAMINHO_PROJETO_TESTS }} --verbosity minimal
       
     - name: Login no Azure Container Registry
       uses: docker/login-action@v1.6.0
